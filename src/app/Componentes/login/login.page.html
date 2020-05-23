@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Inicio de Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <img class="icon" src="assets/icon/login.png" alt="" >
+<ion-item class="transparent-item">
+  <ion-label position="floating" color="success"> Correo</ion-label>
+  <ion-input  color="success" type="text" [(ngModel)]="email" name="email"></ion-input>
+</ion-item>
+<ion-item class="transparent-item">
+  <ion-label  color="success" position="floating">Contraseña</ion-label>
+  <ion-input  color="success" type="password" [(ngModel)]="password" name="password"></ion-input>
+</ion-item>
+<br>
+<ion-button (click)="OnSubmitLogin()" expand="block" color="success" fill="outline">Entrar</ion-button>
+
+<ion-item class="transparent-item">
+  <ion-button color="success" (click)="autocomplete('admin')" slot="start" color="success" fill="outline">Admin</ion-button>
+</ion-item>
+<ion-item class="transparent-item">
+  <ion-button color="success" (click)="autocomplete('invitado')" slot="start" color="success" fill="outline">Invitado</ion-button>
+</ion-item>
+<ion-item class="transparent-item">
+  <ion-button color="success" (click)="autocomplete('cristian')" slot="start" color="success" fill="outline">Anonimo</ion-button>
+</ion-item>
+<ion-item class="transparent-item">
+  <ion-button color="success" (click)="autocomplete('aitu')" slot="start" color="success" fill="outline">Aitana</ion-button>
+</ion-item>
+<ion-item class="transparent-item">
+  <ion-button color="success" (click)="autocomplete('tester')" slot="start" color="success" fill="outline">Tester</ion-button>
+</ion-item>
+
+</ion-content>

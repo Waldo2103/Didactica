@@ -1,0 +1,50 @@
+<ion-content>
+  
+  <div>
+      <ion-button color="success" fill="outline" (click)="play('v1');">
+        <img src="assets/categorias/{{valor1}}.png" height="90%" width="40%">
+        
+      </ion-button>
+      <br>
+      <ion-button color="success" fill="outline" (click)="play('v2');">
+        <img src="assets/categorias/{{valor2}}.png" height="90%" width="40%">
+      </ion-button>
+        <br>
+        <ion-button color="success" fill="outline" (click)="play('v3');">
+          <img src="assets/categorias/{{valor3}}.png" height="90%" width="40%">
+        </ion-button>
+        <br>
+        <ion-button color="success" fill="outline" (click)="play('v4');">
+          <img src="assets/categorias/{{valor4}}.png" height="90%" width="40%">
+        </ion-button>
+        <br>
+        <ion-button color="success" fill="outline" (click)="play('v5');">
+          <img src="assets/categorias/{{valor5}}.png" height="90%" width="40%">
+        </ion-button>
+        <br>
+        
+  
+  </div>
+ 
+  <ion-fab slot="fixed" vertical="center">
+    <ion-fab-button color="dark" ><img src={{idiomaIMG}}></ion-fab-button>
+    
+    <ion-fab-list side="bottom" >
+        <ion-fab-button (click)="idioma('esp');"><img src="assets/idioma/esp.png"></ion-fab-button>
+        <ion-fab-button (click)="idioma('gb');"><img src="assets/idioma/gb.png" ></ion-fab-button>
+        <ion-fab-button (click)="idioma('por');"><img src="assets/idioma/por.png"></ion-fab-button>
+    </ion-fab-list>
+    
+  </ion-fab>
+  <ion-fab slot="fixed" vertical="center" horizontal="end">
+    <ion-fab-button color="dark" ><img src="assets/categorias/cat.png"></ion-fab-button>
+  
+    <ion-fab-list side="bottom" >
+       <ion-fab-button color="dark" (click)="categoria('num');"><img src="assets/categorias/num.png"></ion-fab-button>
+      <ion-fab-button color="light" (click)="categoria('ani');"><img src="assets/categorias/ani.png"></ion-fab-button>
+       <ion-fab-button color="dark" (click)="categoria('col');"><img src="assets/categorias/col.png"></ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+  
+  
+</ion-content>
